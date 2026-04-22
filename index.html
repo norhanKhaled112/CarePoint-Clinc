@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint|Clinc</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="CarePoint|Clinc Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+        
+                    <li><a href="http://localhost/uni_project/profile.php">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="http://localhost/uni_project/registerform.php" class="login-btn">Login</a>
+                
+        
+            </div>
+        
+        </div>
+        <div class="nav-burger">
+        
+            
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="register.html">Login</a></li>
+                </ul>
+            </div>
+        
+            
+            <div class="burger" onclick="toggleMenu(); event.stopPropagation();">   <!--prevent closing -->
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        
+        </div>
+        
+        
+        <div class="img-header">
+        <img src="img/header_ph (1).webp" alt="Header Image">
+        <div class="overlay"></div>
+        </div>
+        <div class="text">
+            <p>Welcome to CarePoint Clinic</p>
+            <h1>Your Health, <span class="priority">Our Priority</span></h1>
+            <p>Experience compassionate, personalized healthcare with our <br> team of expert physicians . Book your
+                appointment today.</p>
+        </div>
+       
+
+    </div>
+    <div id="about">
+        <div class="text_about">
+            <h3>About Us</h3>
+            <h2>Committed to <br><span>Your Care</span></h2>
+
+            <p>At our clinic, we believe that healthcare goes beyond just treatment; it’s a long-term relationship built
+                on trust and
+                respect. We utilize the latest medical technologies to ensure precise diagnoses and effective
+                treatments. Every member
+                of our team is committed to providing personalized support to every patient, addressing their unique
+                needs. Our goal is
+                for each visitor to feel safe, comfortable, and confident at every step of their journey with us. We are
+                here to be
+                partners in your health, working to enhance your life every day.</p>
+            <div class="btn_about">
+                <a href="learn.html" target="_blank">Learn More</a>
+            </div>
+        </div>
+        <div class="img_about">
+            <img src="img/about (1).webp" alt="doctors">
+        </div>
+    </div>
+    <div id="services">
+        <div class="txtser">
+            <h3>What We Offer</h3>
+            <h2>Our Medical Services</h2>
+        </div>
+        <div class="services-container">
+            <a class="service-link" href="general.html" target="_blank">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h4>General Medicine</h4>
+                    <p>Comprehensive primary care for all ages with preventive screenings and health management.</p>
+
+
+                </div>
+            </a>
+            <a class="service-link" href="cardiology.html" target="_blank">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4>Cardiology</h4>
+                    <p>Advanced heart care with diagnostic services and ongoing cardiac monitoring..</p>
+
+
+                </div>
+            </a>
+            <a class="service-link" href="neurology.html" target="_blank">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4>Neurology</h4>
+                    <p>Expert diagnosis and treatment of neurological disorders and conditions.</p>
+
+
+                </div>
+            </a>
+            <a class="service-link" href="pediatrics.html" target="_blank">
+                <div class="service-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-baby-carriage"></i>
+                    </div>
+                    <h4>Pediatrics</h4>
+                    <p>Dedicated care for infants, children, and adolescents focusing on growth and development.</p>
+
+
+                </div>
+        </div>
+    </div>
+    <div class="rating">
+        <h2>What Our Patients Say</h2>
+        <div class="rev_cards">
+            <div class="rev_card">
+                <img src="img/rev.jpg" alt="Patient Image">
+                <div class="star_icon">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"CarePoint Clinic provided exceptional care during my recent visit. The staff was friendly and
+                    professional, making me feel comfortable throughout the entire process. I highly recommend their
+                    services!"</p>
+                <h4>- Sarah M.</h4>
+
+            </div>
+            <div class="rev_card">
+                <img src="img/rev.jpg" alt="Patient Image">
+                <div class="star_icon">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p>"I had a wonderful experience at CarePoint Clinic. The doctors were knowledgeable and took the time
+                    to listen to my concerns. The clinic was clean and well-organized, and I felt confident in the care
+                    I received."</p>
+                <h4>- John D.</h4>
+
+            </div>
+            <div class="rev_card">
+                <img src="img/rev.jpg" alt="Patient Image">
+                <div class="star_icon">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+
+                </div>
+                <p>"CarePoint Clinic exceeded my expectations. The staff was attentive and caring, and the facilities
+                    were top-notch. I felt like I was in good hands from the moment I walked in. Highly recommend!"</p>
+                <h4>- Emily R.</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-text">
+            <h2>Ready to Take Control of Your Health?</h2>
+            <h3>Schedule Your Appointment Today and Experience the CarePoint Difference.</h3>
+            <div class="contact-btn">
+                <a href="http://localhost/uni_project/registerform.php">Create Your Acount</a>
+            </div>
+        </div>
+        
+        
+        </div>
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="img/logo.png">
+                <h4>Providing compassionate healthcare <br> for families since 2005 </h4>
+
+            </div>
+            <div class="quick_link">
+                <h3> Quick links</h3>
+                
+                <a  href="#about"> About us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+               
+
+
+            </div>
+            <div class="address">
+                <h3> Contact</h3>
+                <h4>Al-Gomhoria street,Near Mansoura <br> University,El-Mansoura,Dakahlia,EGYPT</h4>
+                <h4> (555) 123-4567</h4>
+                <h4> carepoint@gmail.com</h4>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+           <p> &copy; 2026 CarePoint Clinc. All rights reserved</p>
+
+        </div>
+        <script src="nav.js"></script>
+
+  
+    
+
+
+</body>
+
+</html>

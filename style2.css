@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,
+            rgba(0, 84, 97, 0.9),
+            rgba(0, 128, 140, 0.8));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.card-header {
+    padding: 30px 30px 10px;
+    text-align: center;
+}
+
+.card-header h2 {
+    color: #3a4a47;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.card-header p {
+    color: #3a4a47;
+    font-size: 0.95rem;
+}
+
+/* Role Toggle (Patient / Doctor) */
+.role-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.role-btn {
+    background: rgba(0, 0, 0, 0.389);
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: #005461;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.role-btn:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.role-btn:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.role-btn.active {
+    background: gainsboro;
+    color: #005461;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Login / Register Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #3a4a47;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: #3a4a4778;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    color: #3a4a47;
+    transition: all 0.3s ease;
+}
+
+/* Forms Container */
+.forms-container {
+    padding: 0 30px 30px;
+    position: relative;
+    min-height: 250px;
+}
+
+.form-section {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.form-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Styles */
+.input-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #3a4a47;
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #005461;
+    background: #fff;
+}
+
+.input-group select {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    transition: border-color 0.3s, background 0.3s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    color: #3a4a47;
+}
+
+.input-group select:invalid {
+    color: #3a4a47;
+}
+
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #3a4a47;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #005461;
+}
+
+/* Errors */
+.error-message {
+    color: #3a4a47;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.input-group.error input,
+.input-group.error select {
+    border-color: #3a4a47;
+    background: #fff;
+}
+
+.input-group.error .error-message {
+    display: block;
+}
+
+/* Buttons */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #005461;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.1s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.95rem;
+
+}
+
+.alert.show {
+    display: block;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
