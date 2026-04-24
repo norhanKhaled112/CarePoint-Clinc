@@ -230,7 +230,7 @@ $conn->close();
                     <?php endif; ?>
 
                     <!-- زراير تغيير الـ status للدكتور بس -->
-                    <?php if ($user_role === 'Doctor'): ?>
+                    <?php if ($user_role === 'Doctor' &&  $a['status'] === 'pending'): ?>
                     <form method="POST" class="status-form">
                         <input type="hidden" name="appt_id"    value="<?= $a['id'] ?>">
                         <input type="hidden" name="new_status" value="confirmed">
