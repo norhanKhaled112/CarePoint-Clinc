@@ -15,6 +15,6 @@ if ($conn->connect_error) {
     exit;
 }
 
-//  encoding
+//  encoding Arabic, characters 
 $conn->set_charset('utf8mb4');
 ?>
