@@ -1,5 +1,5 @@
 <?php
-// ===== إعدادات الـ Response =====
+// ===== API =====
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
